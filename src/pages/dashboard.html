@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>NRLM</title>
+	<link rel="icon" type="image/png" href="assets/img/pb.ico">
+
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+	@@include('shared/welcome_header.html')
+	@@include('shared/dashboard_header.html')
+
+	<div class="row">
+		<div class="col h4">
+			Loan Applications
+		</div>
+		<div class="col text-right mb-3">
+			<a href="#" class="mr-4" id="filter"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">
+					<path id="filter" d="M22,3H2l8,9.46V19l4,2V12.46Z" transform="translate(-1 -2)" fill="none"
+						stroke="rgba(33,47,88,0.57)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+				</svg>
+			</a>
+			<a href="loan-apply.html" class="btn btn-primary">New Loan Application</a>
+		</div>
+	</div>
+
+	<!-- forms section -->
+
+	<form id="filter-box">
+		<div class="card border-0">
+			<div class="card-body">
+				<div class="row align-items-center">
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Gram Panchayat</label>
+							<select class="form-control">
+								<option>Agasod P </option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<label for="exampleFormControlSelect1">Village</label>
+							<select class="form-control">
+								<option>Agasod P </option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<button class="btn btn-primary bg-dark text-uppercase mt-4 px-4">search</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- form sectiopn end here -->
+	<div class="rounded table-responsive">
+		<table class="table mb-0 bg-white">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">SHG</th>
+					<th scope="col">SB A/c No.</th>
+					<th scope="col">Proposed Amount (₹)</th>
+					<th scope="col">Submitted on</th>
+					<th scope="col">Application TYpe</th>
+					<th scope="col">Application No.</th>
+					<th scope="col">Status</th>
+	
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" placeholder="Search" class="form-control"></td>
+					<td><input type="text" placeholder="Search" class="form-control"></td>
+					<td></td>
+					<td></td>
+					<td>
+						<select name="" id="" class="form-control">
+							<option value="">Fresh</option>
+							<option value="">Renewal</option>
+						</select>
+					</td>
+					<td><input type="text" placeholder="Search" class="form-control"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Ritu Verma</td>
+					<td>8003730454</td>
+					<td>1,21,000</td>
+					<td>06 Dec, 2020</td>
+					<td>Fresh</td>
+					<td>MP/188683/2512</td>
+					<td><a href="#">Sanctioned</a></td>
+				</tr>
+				<tr>
+					<td>Ritu Verma</td>
+					<td>8003730454</td>
+					<td>1,21,000</td>
+					<td>06 Dec, 2020</td>
+					<td>Renewal</td>
+					<td>MP/188683/2512</td>
+					<td><a href="#">Sanctioned</a></td>
+				</tr>
+				<tr>
+					<td>Ritu Verma</td>
+					<td>8003730454</td>
+					<td>1,21,000</td>
+					<td>06 Dec, 2020</td>
+					<td>Fresh</td>
+					<td>MP/188683/2512</td>
+					<td><a href="#">Rejected</a></td>
+				</tr>
+				<tr>
+					<td>Ritu Verma</td>
+					<td>8003730454</td>
+					<td>1,21,000</td>
+					<td>06 Dec, 2020</td>
+					<td>Renewal</td>
+					<td>MP/188683/2512</td>
+					<td><a href="#">Sanctioned</a></td>
+				</tr>
+				<tr>
+					<td>Ritu Verma</td>
+					<td>8003730454</td>
+					<td>1,21,000</td>
+					<td>06 Dec, 2020</td>
+					<td>Renewal</td>
+					<td>MP/188683/2512</td>
+					<td><a href="#">Sanctioned</a></td>
+				</tr>
+	
+			</tbody>
+		</table>
+	</div>
+
+	@@include('shared/dashboard-footer.html')
+
+</body>
+
+</html>

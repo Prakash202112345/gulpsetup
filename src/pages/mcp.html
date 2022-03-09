@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRLM</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    @@include('shared/dashboard_header.html')
+
+	<div class="d-flex align-items-center">
+		<a class="bg-white border-0 p-2 text-center mr-4 rounded" href="dashboard.html"><svg id="arrow_back_ios-24px"
+				xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				<path id="Path_21" data-name="Path 21" d="M0,0H16V16H0Z" fill="none" />
+				<path id="Path_22" data-name="Path 22" d="M7.78,3.28,6.6,2.1,0,8.7l6.6,6.6,1.18-1.18L2.36,8.7Z"
+					transform="translate(0 -0.7)" fill="#0a0f1d" />
+			</svg>
+		</a>
+		<div class="h4 m-0">Apply for Loan</div>
+	</div>
+
+
+    	<!-- steper start here -->
+
+        <section class="bg-white mt-3">
+            <ul class="stepper stepper-horizontal">
+                <li class="completed pl-0">
+                    <a href="#!">
+                        <span class="circle">1</span>
+                        <span class="div">SHG Details</span>
+                    </a>
+                </li>
+                <li class="completed">
+                    <a href="#!">
+                        <span class="circle">2</span>
+                        <span class="div">Upload Section</span>
+                    </a>
+                </li>
+                <li class="completed">
+                    <a href="#!">
+                        <span class="circle">3</span>
+                        <span class="div">Application Type</span>
+                    </a>
+                </li>
+                <li class="current">
+                    <a href="#!">
+                        <span class="circle">4</span>
+                        <span class="div">MCP</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#!">
+                        <span class="circle">5</span>
+                        <span class="div">Financials</span>
+                    </a>
+                </li>
+                <li class="pr-0">
+                    <a href="#!">
+                        <span class="circle">6</span>
+                        <span class="div">Submit</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    
+
+        <!-- SHG Details -->
+
+
+    <div class="card card-border mt-3">
+        <div class="card-header bg-primary ">
+            <div class="text-white">SHG Details</div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <div >Gram Panchayat</div>
+                    <div>AGASOD P</div>
+                </div>
+                <div class="col-md-4">
+                    <div >Village</div>
+                    <div>AGASOD P</div>
+                </div>
+                <div class="col-md-4">
+                    <div >SHG</div>
+                    <div>Maashakti (118927)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Application type name -->
+
+    <div class="card card-border mt-3">
+        <div class="card-header bg-primary ">
+            <div class="text-white">Application Type</div>
+        </div>
+        <div class="card-body">
+            <div>Fresh Loan Application</div>
+        </div>
+    </div>
+
+    <!-- Primary Details -->
+
+    <div class="card card-border mt-3">
+        <div class="card-header bg-primary ">
+            <div class="text-white">Primary Details</div>
+        </div>
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="">MCP Date</label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="">Is Group activity ??</label> <br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio">
+                            <label class="form-check-label">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" checked>
+                            <label class="form-check-label">No</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio">
+                            <label class="form-check-label">Mixed</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="">MCP For</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">Bank</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- SHG Members  -->
+
+        <div class="card card-border mt-3">
+            <div class="card-header bg-primary ">
+                <div class="text-white">Micro Credit Plan for fresh Application</div>
+            </div>
+            <div class="card-body px-0">
+                <table class="table border-0">
+                    <thead>
+                        <tr>
+                            <th class="border-0">S. No.</th>
+                            <th class="border-0">Member Name</th>
+                            <th class="border-0">Father/Husband Name</th>
+                            <th class="border-0">Proposed Loan Amount (Rs.) <sup class="text-danger">*</sup> </th>
+                            <th class="border-0">Purpose of Loan <sup class="text-danger">*</sup> </th>
+                            <th class="border-0">Priority <sup class="text-danger">*</sup> </th>
+                            <th class="border-0">Training Required</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>MANJU</td>
+                            <td>VISHNU PRASAD</td>
+                            <td><input type="text" class="form-control" placeholder="0"></td>
+                            <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MANJU</td>
+                            <td>VISHNU PRASAD</td>
+                            <td><input type="text" class="form-control" placeholder="0"></td>
+                            <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MANJU</td>
+                            <td>VISHNU PRASAD</td>
+                            <td><input type="text" class="form-control" placeholder="0"></td>
+                            <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MANJU</td>
+                            <td>VISHNU PRASAD</td>
+                            <td><input type="text" class="form-control" placeholder="0"></td>
+                            <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MANJU</td>
+                            <td>VISHNU PRASAD</td>
+                            <td><input type="text" class="form-control" placeholder="0"></td>
+                            <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                            </select>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="row mt-3 ml-1">
+                    <div class="col-md-3">
+                        Total Loan Amount Required (as per MCP) in Rs.
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="0">
+                    </div>
+                </div>
+                <div class="row mt-3 ml-1">
+                    <div class="col-md-3">
+                        Total Loan Sanctioned Limit Requested in Rs.
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-3">
+            <a type="button" href="financial.html" class="btn btn-primary">Next</a>
+            <button type="button" class="btn btn-outline-secondary mx-3">Save as Draft</button>
+            <a type="button" href="application_type.html" class="btn btn-outline-secondary">Previous</a>
+        </div>
+    
+    
+
+
+
+
+
+
+
+
+
+    
+    @@include('shared/dashboard-footer.html')
+    </body>
+    </html>

@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Welcome Banker</title>
+    <link rel="icon" type="image/png" href="assets/img/pb.ico">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+    @@include('shared/welcome_header_bank.html') @@include('shared/bank_sidebar.html')
+
+    <div class="row">
+        <div class="col h4 mb-3">
+            Rejected Applications
+        </div>
+    </div>
+
+    <table class="table mb-0 bg-white" id="direct_bank">
+        <thead class="thead-dark">
+            <tr>
+                <th>S.No.</th>
+                <th>SHG Name</th>
+                <th>SB A/C No.</th>
+                <th>Application Type</th>
+                <th>Application Number</th>
+                <th>Submission Date</th>
+                <th>Rejected On</th>
+                <th width="30%">Reason</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="filter">
+                <td></td>
+                <td class="filter_input"></td>
+                <td class="filter_input"></td>
+                <td>
+                    <select name="" id="" class="form-control">
+                        <option>Fresh</option>
+                        <option>Existing</option>
+                    </select>
+                </td>
+                <td class="filter_input"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>MULLAI</td>
+                <td>79439010005475</td>
+                <td>FRESH</td>
+                <td><a href="view_application.html" class="text-primary">TN/357742/200672</a> </td>
+                <td>01-10-2020</td>
+                <td>22-01-2021</td>
+                <td>TRACKING FORM - REGULAR</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JAI SEWA JAI JOHAR </td>
+                <td>77062953904</td>
+                <td>FRESH</td>
+                <td><a href="view_application.html" class="text-primary">CG/168578/272453</a> </td>
+                <td>26-11-2020</td>
+                <td>26-02-2021</td>
+                <td>test rej</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+    </div>
+    @@include('shared/dashboard-footer.html')
+</body>
+
+</html>

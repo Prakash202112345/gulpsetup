@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRLM</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+    @@include('shared/dashboard_header.html')
+
+    
+	<div class="d-flex align-items-center">
+		<a class="bg-white border-0 p-2 text-center mr-4 rounded" href="dashboard.html"><svg id="arrow_back_ios-24px"
+				xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				<path id="Path_21" data-name="Path 21" d="M0,0H16V16H0Z" fill="none" />
+				<path id="Path_22" data-name="Path 22" d="M7.78,3.28,6.6,2.1,0,8.7l6.6,6.6,1.18-1.18L2.36,8.7Z"
+					transform="translate(0 -0.7)" fill="#0a0f1d" />
+			</svg>
+		</a>
+		<div class="h4 m-0">Apply for Loan</div>
+	</div>
+
+    <!-- header end here -->
+
+    	<!-- steper start here -->
+
+        <section class="bg-white mt-3">
+            <ul class="stepper stepper-horizontal">
+                <li class="completed pl-0">
+                    <a href="#!">
+                        <span class="circle">1</span>
+                        <span class="div">SHG Details</span>
+                    </a>
+                </li>
+                <li class="completed">
+                    <a href="#!">
+                        <span class="circle">2</span>
+                        <span class="div">Upload Section</span>
+                    </a>
+                </li>
+                <li class="completed">
+                    <a href="#!">
+                        <span class="circle">3</span>
+                        <span class="div">Application Type</span>
+                    </a>
+                </li>
+                <li class="completed">
+                    <a href="#!">
+                        <span class="circle">4</span>
+                        <span class="div">Enhancement</span>
+                    </a>
+                </li>
+                <li class="pr-0 completed">
+                    <a href="#!">
+                        <span class="circle">5</span>
+                        <span class="div">Submit</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+    <!-- SHG Details -->
+
+
+    <div class="card border-0 mt-3 bg-info">
+        <div class="card-body text-center">
+            <div class="font-weight-medium">Application has been submitted for SHG: SHRI RAM (222427) of Village: BELAI and GP: BELAI  P</div>
+            <div class="text-center">Please check your application in Submitted Application Link</div>
+            <a href="dashboard.html" type="button" class="btn btn-primary mt-2">LOAN APPLICATION</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    
+    @@include('shared/dashboard-footer.html')
+</body>
+</html>
